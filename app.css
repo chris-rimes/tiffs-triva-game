@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shrikhand&display=swap');
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+  background: #ef32d9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89fffd,
+    #ef32d9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89fffd,
+    #ef32d9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  color: yellow;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3.5rem;
+}
+
+#heading {
+  color: rgb(255, 195, 205);
+  font-family: 'Shrikhand', cursive;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 1.5rem; /* Vertically center the text there */
+  background-color: #f7f7f7;
+  color: whitesmoke;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 5px 15px;
+}
+
+#btn-trigger {
+  position: absolute;
+  left: 50%;
+  bottom: 45%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #f3f032;
+  border-color: #f3f032;
+  color: black;
+  font-size: 1.5rem;
+}
