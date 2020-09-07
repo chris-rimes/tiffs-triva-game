@@ -27,8 +27,8 @@ function getData() {
     .get('https://opentdb.com/api.php?amount=1&difficulty=easy&type=boolean')
     .then(({ data }) => {
       for (let questions of data.results) {
-        const { data, question, correct_answer } = questions;
-        modalTitle.innerText = 'True or False';
+        const { category, question, correct_answer } = questions;
+        modalTitle.innerText = `True or False | Category: ${category}`;
         modalBody.innerText = `${htmlspecialchars_decode(
           question,
           'ENT_QUOTES'
