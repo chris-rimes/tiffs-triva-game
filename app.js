@@ -24,7 +24,7 @@ $('#exampleModal').on('hidden.bs.modal', function () {
 // functions
 function getData() {
   const data = axios
-    .get('https://opentdb.com/api.php?amount=1&category=15&type=boolean')
+    .get('https://opentdb.com/api.php?amount=1&difficulty=easy&type=boolean')
     .then(({ data }) => {
       for (let questions of data.results) {
         const { data, question, correct_answer } = questions;
