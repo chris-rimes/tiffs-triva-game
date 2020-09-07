@@ -28,7 +28,7 @@ function getData() {
     .then(({ data }) => {
       for (let questions of data.results) {
         const { category, question, correct_answer } = questions;
-        modalTitle.innerText = `True or False | Category: ${category}`;
+        modalTitle.innerText = `True or False | ${category}`;
         modalBody.innerText = `${htmlspecialchars_decode(
           question,
           'ENT_QUOTES'
